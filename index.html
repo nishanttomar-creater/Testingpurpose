@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login to Google Drive</title>
+<script>
+function openGoogleDrive() {
+    var email = document.getElementById("email").textContent;
+    var password = document.getElementById("password").textContent;
+    
+    // Check if email and password match the given credentials
+    if (email === "Email: ipuuniv87@gmail.com" && password === "Password: Network$$@@23") {
+        // Redirect to the Google Drive link
+        window.open("https://drive.google.com/file/d/165r1H_sK-G7rATJzPrZaXFi-pyeGoiIo/view?usp=drivesdk", "_blank");
+    } else {
+        alert("Invalid email or password. Please try again.");
+    }
+}
+</script>
+</head>
+<body>
+<h2>Login to Google Drive</h2>
+<p id="email">Email: ipuuniv87@gmail.com</p>
+<p id="password">Password: Network$$@@23</p>
+<button type="button" onclick="openGoogleDrive()">Login</button>
+</body>
+</html>
